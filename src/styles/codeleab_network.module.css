@@ -1,0 +1,27 @@
+.codeleapNetwork {
+  block-size: 100vh;
+  overflow: scroll;
+
+}
+
+.codeleapNetwork header {
+  block-size: 80px;
+  background-color: #7695ec;
+  padding-inline-start: 37px;
+  padding-block-start: 27px;
+  color: white;
+}
+
+.codeleapNetwork header > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+.codeleapNetwork main {
+  block-size: calc(100%);
+  padding: 24px;
+}

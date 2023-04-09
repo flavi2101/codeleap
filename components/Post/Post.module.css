@@ -1,0 +1,50 @@
+.post {
+  block-size: 20%;
+  border-radius: 15px;
+  border: 1px solid gray;
+  margin-block-end: 22px;
+
+}
+.post section:nth-of-type(odd) {
+  display: grid;
+  grid-template-columns: 11fr 0.8fr 0.8fr;
+  align-items: center;
+  background-color: #7695ec;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.post h2 ~ span{
+  color: white;
+}
+
+.post span{
+    font-size: 26px;
+}
+.post h2 {
+  padding: 24px;
+  color: white;
+}
+
+.post section:nth-of-type(even) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-inline: 22px;
+  padding-block: 16px;
+  block-size: 15%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: gray;
+  
+}
+
+.post h4 {
+  flex: 50px;
+}
+
+.post p {
+    padding: 22px;
+}

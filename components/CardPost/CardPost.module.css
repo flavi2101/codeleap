@@ -1,0 +1,128 @@
+.CardPost {
+  position: relative;
+  inline-size: 100%;
+  block-size: 25%;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #999999;
+  padding-inline: 24px;
+  margin-block-end: 24px;
+}
+
+
+
+.CardPost h2 {
+  padding: 24px;
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  block-size: 20%;
+}
+
+.CardPost form {
+  padding-inline: 24px;
+  block-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.CardPost label {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.CardPost textarea{
+  border-radius: 8px;
+  padding-inline-start: 11.5px;
+  padding-block-start: 3px;
+}
+
+.CardPost input {
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  block-size: 32px;
+  background: #ffffff;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  padding-inline-start: 11.5px;
+}
+
+.submitButton {
+  position: relative;
+  inset-inline-start: calc(100% - 111px);
+  border-radius: 8px;
+  block-size: 32px;
+  inline-size: 111px;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.CardPostDelete{
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #999999;
+  padding-inline: 24px;
+  margin-block-end: 24px;
+}
+
+.CardPostDelete h2 {
+  padding: 24px;
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  block-size: 20%;
+}
+
+.CardPostDelete form {
+  padding-inline: 24px;
+  block-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.CardPostDelete label {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.CardPostDelete textarea{
+  border-radius: 8px;
+  padding-inline-start: 11.5px;
+  padding-block-start: 3px;
+}
+
+.CardPostDelete input {
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  block-size: 32px;
+  background: #ffffff;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  padding-inline-start: 11.5px;
+}
