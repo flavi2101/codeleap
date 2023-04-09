@@ -31,6 +31,7 @@ export default function CardPost() {
           data={{title,content}}
           cssInfo={styles}
           textButton="Create"
+          resetfiels={{settitle,setcontent}}
         ></CardButton>
       </form>
     </div>

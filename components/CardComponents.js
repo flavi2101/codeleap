@@ -1,6 +1,7 @@
 import ContextHook from "../hooks/UseContextHook";
-import Link from "next/link";
+
 import axios from "axios";
+import { useRouter } from 'next/router'
 
 export function CardTitle({ title }) {
   return <h2>{title}</h2>;
@@ -27,15 +28,17 @@ export function CardInputData({ label, placeholder, data, setdata }) {
 
 
 
-export function CardButton({ idform, data, cssInfo, textButton }) {
+export function CardButton({ idform, data, cssInfo, textButton,resetfiels }) {
   const {user, dispatch } = ContextHook();
-
+  const route = useRouter()
   return (
     <button
       onClick={(e) => {
-        e.preventDefault();
+        e.preventDefault()
         if (idform === "register") {
           dispatch({ type: "user", payload: data });
+          route.push("/codeleab_network")
+        
         }else if( idform === 'post'){
           
           axios
@@ -46,6 +49,8 @@ export function CardButton({ idform, data, cssInfo, textButton }) {
           })
           .then(function (response) {
             console.log(response);
+            resetfiels.settitle('')
+            resetfiels.setcontent('')
           })
           .catch(function (error) {
             console.log(error);
@@ -62,12 +67,9 @@ export function CardButton({ idform, data, cssInfo, textButton }) {
       }
       className={cssInfo.submitButton}
     >
-      <Link
-        style={{ textDecoration: "none", color: "inherit" }}
-        href="/codeleab_network"
-      >
+     
         {textButton}
-      </Link>
+      
     </button>
   );
 }
